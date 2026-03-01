@@ -8855,8 +8855,16 @@ input, select, textarea {
 
 	.service-hero-image img {
 		width: 100%;
+		height: auto;
+		max-height: none;
+		object-fit: contain;
 		border-radius: 0.6rem;
 		border: 1px solid rgba(200, 169, 106, 0.25);
+	}
+
+	.service-hero-image picture {
+		display: block;
+		line-height: 0;
 	}
 
 	.seo-intro,

@@ -8653,7 +8653,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 	}
 
-	#site-header .nav-links a {
+	#site-header .nav-links a:not(.button) {
 		text-decoration: none;
 		color: inherit;
 		font-weight: 400;
@@ -8661,12 +8661,27 @@ input, select, textarea {
 		border-bottom: 1px solid transparent;
 	}
 
-	#site-header .nav-links a:hover {
+	#site-header .nav-links a:not(.button):hover {
 		border-bottom-color: rgba(200, 169, 106, 0.6);
 	}
 
+	#site-header .nav-links .button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		vertical-align: middle;
+		line-height: 1.2;
+	}
+
 	#site-header .nav-links .button {
-		padding: 0.6rem 1.2rem;
+		padding: 0 1.2rem;
+		min-height: 3.325em;
+		border-bottom: 0;
 	}
 
 	.banner .trust-list {
@@ -8709,6 +8724,237 @@ input, select, textarea {
 		content: "✔";
 		margin-right: 0.6rem;
 		color: #c8a96a;
+	}
+
+	.diagnostics-block,
+	.guarantees-block,
+	.local-seo-block {
+		max-width: 58rem;
+		text-align: left;
+	}
+
+	.dash-list,
+	.check-list {
+		padding: 0;
+		margin: 0 0 1.5rem 0;
+		display: grid;
+		gap: 0.5rem;
+	}
+
+	.dash-list li,
+	.check-list li {
+		position: relative;
+		padding-left: 1.25rem;
+	}
+
+	.dash-list li:before {
+		content: "—";
+		position: absolute;
+		left: 0;
+		color: #c8a96a;
+	}
+
+	.check-list li:before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: #e8c88f;
+	}
+
+	.requests-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 1.2rem;
+		margin-top: 1rem;
+		text-align: left;
+	}
+
+	.request-card {
+		padding: 1.25rem;
+		border: 1px solid rgba(200, 169, 106, 0.25);
+		border-radius: 0.5rem;
+		background: rgba(15, 15, 26, 0.65);
+	}
+
+	.request-card h3 {
+		margin-bottom: 0.75rem;
+	}
+
+	.zaprosy-note {
+		margin: 1.25rem 0 1rem 0;
+		font-weight: 500;
+	}
+
+	.all-services-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 1rem;
+		margin-top: 1.25rem;
+	}
+
+	.service-link-card {
+		display: block;
+		padding: 1rem 1.1rem;
+		border: 1px solid rgba(200, 169, 106, 0.25);
+		border-radius: 0.5rem;
+		text-decoration: none;
+		color: #e0e0e0;
+		background: rgba(15, 15, 26, 0.65);
+		transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.service-link-card:hover {
+		transform: translateY(-3px);
+		border-color: rgba(232, 200, 143, 0.8);
+		box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+	}
+
+	.quick-services .inner {
+		max-width: 64rem;
+	}
+
+	.seo-page .wrapper {
+		padding: 4rem 0 3.5rem 0;
+	}
+
+	.breadcrumbs {
+		margin-bottom: 1rem;
+		font-size: 0.85rem;
+		opacity: 0.85;
+	}
+
+	.breadcrumbs a {
+		text-decoration: none;
+		border-bottom: 1px dashed rgba(200, 169, 106, 0.5);
+	}
+
+	.hero-subtitle {
+		max-width: 60rem;
+		margin: 0 auto 2rem auto;
+	}
+
+	.service-hero-image {
+		max-width: 26rem;
+		margin: 0.5rem auto 1.5rem auto;
+	}
+
+	.service-hero-image img {
+		width: 100%;
+		border-radius: 0.6rem;
+		border: 1px solid rgba(200, 169, 106, 0.25);
+	}
+
+	.seo-intro,
+	.seo-section {
+		max-width: 70rem;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	.seo-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 1.2rem;
+		margin-top: 1.25rem;
+	}
+
+	.seo-card {
+		padding: 1.25rem;
+		border: 1px solid rgba(200, 169, 106, 0.25);
+		border-radius: 0.5rem;
+		background: rgba(15, 15, 26, 0.65);
+	}
+
+	.seo-card h3 {
+		margin-bottom: 0.6rem;
+	}
+
+	.case-grid,
+	.review-grid,
+	.faq-grid,
+	.related-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 1rem;
+		margin-top: 1rem;
+	}
+
+	.case-card,
+	.review-card,
+	.related-card {
+		padding: 1.15rem;
+		border: 1px solid rgba(200, 169, 106, 0.25);
+		border-radius: 0.5rem;
+		background: rgba(15, 15, 26, 0.7);
+		text-align: left;
+	}
+
+	.case-card p,
+	.review-card p {
+		margin-bottom: 0.9rem;
+	}
+
+	.case-card p:last-child,
+	.review-card p:last-child {
+		margin-bottom: 0;
+	}
+
+	.case-label {
+		font-weight: 600;
+		color: #e8c88f;
+	}
+
+	.faq-grid details {
+		border: 1px solid rgba(200, 169, 106, 0.2);
+		border-radius: 0.5rem;
+		padding: 1rem 1.15rem;
+		background: rgba(15, 15, 26, 0.7);
+	}
+
+	.faq-grid summary {
+		cursor: pointer;
+		font-weight: 600;
+	}
+
+	.related-card {
+		text-decoration: none;
+		color: #e0e0e0;
+		transition: border-color 0.2s ease, transform 0.2s ease;
+	}
+
+	.related-card:hover {
+		border-color: rgba(232, 200, 143, 0.8);
+		transform: translateY(-2px);
+	}
+
+	.assist-list {
+		list-style: none;
+		padding: 0;
+		margin: 1rem 0 0 0;
+		display: grid;
+		gap: 0.75rem;
+	}
+
+	.assist-list li {
+		padding: 0.85rem 1rem;
+		border: 1px solid rgba(200, 169, 106, 0.2);
+		border-radius: 0.5rem;
+		background: rgba(15, 15, 26, 0.65);
+	}
+
+	.service-footer-nav {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 1.5rem 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 0.65rem 1rem;
+		text-align: left;
+	}
+
+	.service-footer-nav a {
+		text-decoration: none;
+		border-bottom: 1px dashed rgba(200, 169, 106, 0.5);
 	}
 
 	.services-categories {
@@ -8855,10 +9101,59 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 		#site-header .inner {
 			padding: 0.8rem 1.25rem;
+			gap: 0.8rem;
+		}
+
+		#site-header .nav-links {
+			width: 100%;
+			gap: 0.55rem 0.75rem;
+		}
+
+		#site-header .nav-links a {
+			font-size: 0.8rem;
 		}
 
 		.actions.stacked .button {
 			font-size: 1rem;
-			padding: 0.85rem 1.25rem;
+			padding: 0 1.25rem;
+			min-height: 3.4em;
+			max-width: none;
+		}
+
+		.services-categories {
+			margin-top: 1.5rem;
+		}
+
+		.service-card,
+		.process-card,
+		.testimonial-card,
+		.request-card,
+		.faq details,
+		.trigger-list li {
+			padding: 1.1rem;
+		}
+
+		.case-card,
+		.review-card,
+		.related-card,
+		.faq-grid details,
+		.seo-card,
+		.service-link-card {
+			padding: 1rem;
+		}
+
+		.service-footer-nav {
+			grid-template-columns: 1fr;
+			gap: 0.5rem;
+		}
+
+		.diagnostics-block,
+		.guarantees-block,
+		.local-seo-block {
+			text-align: left;
+		}
+
+		.seo-page .wrapper {
+			padding: 3rem 0 2.6rem 0;
 		}
 	}

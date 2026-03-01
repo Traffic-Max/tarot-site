@@ -4,23 +4,27 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="ru">
 	<head>
 		<title>София Борицкая - Таро, Рунические амулеты, Энергетическая работа</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="Энергетическая диагностика, защита и индивидуальные ритуалы. Конфиденциальные онлайн-консультации, работа с отношениями, очищение, защита и раскрытие жизненных возможностей." />
 		<meta name="keywords" content="Таро, Рунические амулеты, Отливка воском, Чистка негатива, Обереги, Финансовые усиления, Энергетическая работа, Украина" />
 		<meta name="author" content="София Борицкая" />
 		<meta property="og:title" content="София Борицкая - Энергетическая диагностика и защита" />
 		<meta property="og:description" content="Энергетическая диагностика, защита, снятие негатива и индивидуальные обряды. Конфиденциальная онлайн-работа." />
 		<meta property="og:type" content="website" />
-		<meta property="og:image" content="images/banner.png" />
+		<meta property="og:image" content="images/banner.webp" />
 		<meta property="og:locale" content="ru_RU" />
 		<link rel="canonical" href="https://site.com/" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+		<link rel="preload" as="image" href="images/banner.webp" fetchpriority="high" />
 		<link rel="icon" href="images/pic01.jpg" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/main.min.css?v=3" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css?v=3" /></noscript>
 		<script type="application/ld+json">
 		{
 		  "@context": "https://schema.org",
@@ -126,6 +130,8 @@
 						</div>
 					</header>
 
+				<main id="main-content">
+
 				<!-- One -->
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
@@ -136,17 +142,21 @@
 								<li><a href="https://t.me/" class="button big wide smooth-scroll-middle">Написать в Telegram</a></li>
 							</ul>
 							<ul class="trust-list">
-								<li><span class="icon solid fa-check"></span>Более 10 лет практики</li>
-								<li><span class="icon solid fa-check"></span>Работаю дистанционно по всему миру</li>
-								<li><span class="icon solid fa-check"></span>Конфиденциальность 100%</li>
-								<li><span class="icon solid fa-check"></span>Поддержка после консультации</li>
-								<li><span class="icon solid fa-check"></span>Первые изменения уже после диагностики</li>
-								<li><span class="icon solid fa-check"></span>Индивидуальная работа, без шаблонов</li>
+								<li><span class="inline-icon" aria-hidden="true">&#10003;</span>Более 10 лет практики</li>
+								<li><span class="inline-icon" aria-hidden="true">&#10003;</span>Работаю дистанционно по всему миру</li>
+								<li><span class="inline-icon" aria-hidden="true">&#10003;</span>Конфиденциальность 100%</li>
+								<li><span class="inline-icon" aria-hidden="true">&#10003;</span>Поддержка после консультации</li>
+								<li><span class="inline-icon" aria-hidden="true">&#10003;</span>Первые изменения уже после диагностики</li>
+								<li><span class="inline-icon" aria-hidden="true">&#10003;</span>Индивидуальная работа, без шаблонов</li>
 							</ul>
 							<p class="urgency">Ограниченное количество консультаций в неделю.</p>
 						</div>
 						<div class="image">
-							<img src="images/banner.png" alt="Энергетическая диагностика и защита" loading="lazy" />
+							<picture>
+								<source srcset="images/banner.avif" type="image/avif" />
+								<source srcset="images/banner.webp" type="image/webp" />
+								<img src="images/banner.webp" width="1376" height="768" alt="Энергетическая диагностика и защита" fetchpriority="high" decoding="async" />
+							</picture>
 						</div>
 					</section>
 
@@ -214,7 +224,11 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/sofia-portrait.png" alt="София Борицкая - энергетический консультант, диагностика и защита" loading="lazy" />
+							<picture>
+								<source srcset="images/sofia-portrait.avif" type="image/avif" />
+								<source srcset="images/sofia-portrait.webp" type="image/webp" />
+								<img src="images/sofia-portrait.webp" width="928" height="1152" alt="София Борицкая - энергетический консультант, диагностика и защита" loading="lazy" decoding="async" />
+							</picture>
 						</div>
 					</section>
 
@@ -228,7 +242,7 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/tarot.png" alt="Расклады Таро - диагностика отношений и судьбы" loading="lazy" />
+							<img src="images/tarot.webp" width="1376" height="768" alt="Расклады Таро - диагностика отношений и судьбы" loading="lazy" decoding="async" />
 						</div>
 					</section>
 
@@ -242,7 +256,7 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/enegry-clean.png" alt="Чистка негатива - снятие порчи и сглаза" loading="lazy" />
+							<img src="images/enegry-clean.webp" width="1024" height="1024" alt="Чистка негатива - снятие порчи и сглаза" loading="lazy" decoding="async" />
 						</div>
 					</section>
 
@@ -258,7 +272,7 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/vosk-otlivka.png" alt="Отливка воском - диагностика и очищение энергетики" loading="lazy" />
+							<img src="images/vosk-otlivka.webp" width="1024" height="1024" alt="Отливка воском - диагностика и очищение энергетики" loading="lazy" decoding="async" />
 						</div>
 					</section>
 
@@ -272,7 +286,7 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/runic-amulet.png" alt="Рунические амулеты - защита бизнеса и руническая защита" loading="lazy" />
+							<img src="images/runic-amulet.webp" width="1024" height="1024" alt="Рунические амулеты - защита бизнеса и руническая защита" loading="lazy" decoding="async" />
 						</div>
 					</section>
 
@@ -437,62 +451,62 @@
 							<p>Мой подход базируется на глубоком понимании энергетики, классических традициях и личном опыте работы с сотнями клиентов.</p>
 							<div class="items style1 medium onscroll-fade-in">
 								<section>
-									<span class="icon style2 major fa-star"></span>
+									<span class="inline-icon major" aria-hidden="true">&#10022;</span>
 									<h3>Персональный подход</h3>
 									<p>Каждая консультация разрабатывается индивидуально под вашу ситуацию и энергетику без шаблонных решений.</p>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-shield-alt"></span>
+									<span class="inline-icon major" aria-hidden="true">&#10022;</span>
 									<h3>Конфиденциальность</h3>
 									<p>Полная приватность и защита информации о вас и вашей жизни во всех взаимодействиях.</p>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-lightbulb"></span>
+									<span class="inline-icon major" aria-hidden="true">&#10022;</span>
 									<h3>Результаты</h3>
 									<p>Доказанный результат работы благодаря проверенным методикам и многолетнему опыту в области эзотерики.</p>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-handshake"></span>
+									<span class="inline-icon major" aria-hidden="true">&#10022;</span>
 									<h3>Поддержка</h3>
 									<p>Готовность ответить на вопросы и оказать поддержку на всех этапах энергетической работы.</p>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-clock"></span>
+									<span class="inline-icon major" aria-hidden="true">&#10022;</span>
 									<h3>Гибкий график</h3>
 									<p>Онлайн-консультации в удобное для вас время из любого города Украины и мира.</p>
 								</section>
 								<section>
-									<span class="icon style2 major fa-heart"></span>
+									<span class="inline-icon major" aria-hidden="true">&#10022;</span>
 									<h3>Исцеление</h3>
 									<p>Энергетическое исцеление как основа восстановления физического и психического благополучия.</p>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-gem"></span>
+									<span class="inline-icon major" aria-hidden="true">&#10022;</span>
 									<h3>Амулеты и обереги</h3>
 									<p>Создание персональных амулетов, заряженных вашей энергией и специальными руническими символами.</p>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-circle-notch"></span>
+									<span class="inline-icon major" aria-hidden="true">&#10022;</span>
 									<h3>Энергетическая работа</h3>
 									<p>Комплексные методы энергетического очищения, балансировки и активизации вашего потенциала.</p>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-spa"></span>
+									<span class="inline-icon major" aria-hidden="true">&#10022;</span>
 									<h3>Духовное развитие</h3>
 									<p>Помощь в духовном пути, поиск смысла и гармонии между физическим и духовным миром.</p>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-peace"></span>
+									<span class="inline-icon major" aria-hidden="true">&#10022;</span>
 									<h3>Спокойствие</h3>
 									<p>Восстановление внутреннего мира, избавление от стресса и тревожности через энергетическую гармонизацию.</p>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-lock"></span>
+									<span class="inline-icon major" aria-hidden="true">&#10022;</span>
 									<h3>Защита</h3>
 									<p>Эффективная защита от негативного воздействия, сглаза, порчи и энергетических атак.</p>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-leaf"></span>
+									<span class="inline-icon major" aria-hidden="true">&#10022;</span>
 									<h3>Естественные методы</h3>
 									<p>Работа с природной энергией, древними практиками и натуральными методами без химии и вреда.</p>
 								</section>
@@ -537,29 +551,29 @@
 						</div>
 						<div class="inner testimonials-grid">
 							<article class="testimonial-card">
-								<img src="images/gallery/thumbs/03.jpg" alt="Клиентка Анна - отзыв" loading="lazy" />
+								<img src="images/gallery/thumbs/03.jpg" width="360" height="250" alt="Клиентка Анна - отзыв" loading="lazy" decoding="async" />
 								<h3>Анна, Киев</h3>
 								<p class="meta">Расклад на отношения</p>
 								<p>«После консультации многое стало понятно. София очень точно описала ситуацию и помогла принять решение. Уже через 3 недели появились спокойствие и ясность.»</p>
 							</article>
 							<article class="testimonial-card">
-								<img src="images/gallery/thumbs/04.jpg" alt="Клиент Олег - отзыв" loading="lazy" />
+								<img src="images/gallery/thumbs/04.jpg" width="360" height="250" alt="Клиент Олег - отзыв" loading="lazy" decoding="async" />
 								<h3>Олег, Львов</h3>
 								<p class="meta">Открытие дорог</p>
 								<p>«Чувствовал застой в работе и жизни. Уже через 3 недели после работы появились новые предложения. Благодарю за бережный подход.»</p>
 							</article>
 							<article class="testimonial-card">
-								<img src="images/gallery/thumbs/05.jpg" alt="Клиентка Ирина - отзыв" loading="lazy" />
+								<img src="images/gallery/thumbs/05.jpg" width="360" height="250" alt="Клиентка Ирина - отзыв" loading="lazy" decoding="async" />
 								<h3>Ирина, Одесса</h3>
 								<p class="meta">Снятие негатива</p>
 								<p>«После чистки ушла тревожность, стало легче. Уже через 2 недели почувствовала больше энергии. Важна была поддержка - София оставалась на связи.»</p>
 							</article>
 							<article class="testimonial-card image-card">
-								<img src="images/gallery/thumbs/01.jpg" alt="Скриншот отзыва клиента" loading="lazy" />
+								<img src="images/gallery/thumbs/01.jpg" width="360" height="250" alt="Скриншот отзыва клиента" loading="lazy" decoding="async" />
 								<p class="meta">Скриншот переписки</p>
 							</article>
 							<article class="testimonial-card image-card">
-								<img src="images/gallery/thumbs/02.jpg" alt="Скриншот переписки в мессенджере" loading="lazy" />
+								<img src="images/gallery/thumbs/02.jpg" width="360" height="250" alt="Скриншот переписки в мессенджере" loading="lazy" decoding="async" />
 								<p class="meta">Скриншот переписки</p>
 							</article>
 						</div>
@@ -690,6 +704,8 @@
 						</div>
 					</section>
 
+				</main>
+
 					<!-- Footer -->
 						<footer class="wrapper style1 align-center">
 							<div class="inner">
@@ -704,13 +720,13 @@
 									<li><a href="diagnostika-energetiki/index.html">Диагностика энергетики</a></li>
 									<li><a href="zashita-biznesa/index.html">Защита бизнеса</a></li>
 								</ul>
-								<ul class="icons">
-									<li><a href="https://t.me/" class="icon brands style2 fa-telegram"><span class="label">Telegram</span></a></li>
-								<li><a href="https://wa.me/" class="icon brands style2 fa-whatsapp"><span class="label">WhatsApp</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="mailto:hello@sophiaborytskaya.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
+								<ul class="icons text-icons">
+									<li><a href="https://t.me/" aria-label="Telegram Софии">Telegram</a></li>
+									<li><a href="https://wa.me/" aria-label="WhatsApp Софии">WhatsApp</a></li>
+									<li><a href="#" aria-label="Instagram Софии">Instagram</a></li>
+									<li><a href="#" aria-label="Facebook Софии">Facebook</a></li>
+									<li><a href="mailto:hello@sophiaborytskaya.com" aria-label="Email Софии">Email</a></li>
+								</ul>
 							<p>&copy; София Борицкая. Энергетическая консультация и духовное развитие. Дизайн: <a href="https://html5up.net">HTML5 UP</a>.</p>
 						</div>
 					</footer>
@@ -718,13 +734,13 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.min.js?v=3" defer></script>
+			<script src="assets/js/jquery.scrollex.min.js?v=3" defer></script>
+			<script src="assets/js/jquery.scrolly.min.js?v=3" defer></script>
+			<script src="assets/js/browser.min.js?v=3" defer></script>
+			<script src="assets/js/breakpoints.min.js?v=3" defer></script>
+			<script src="assets/js/util.js?v=3" defer></script>
+			<script src="assets/js/main.js?v=3" defer></script>
 
 	</body>
 </html>
